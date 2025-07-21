@@ -18,6 +18,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				heading: 'var(--font-heading)',
+				body: 'var(--font-body)',
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'glow': 'var(--shadow-glow)',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
