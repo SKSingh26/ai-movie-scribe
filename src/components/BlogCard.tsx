@@ -19,7 +19,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ post }: BlogCardProps) => {
   return (
-    <Card className="group bg-gradient-card border-border hover:shadow-glow transition-all duration-300 overflow-hidden">
+    <Card className="group bg-card border-border hover:shadow-lg transition-all duration-300 overflow-hidden">
       {post.image && (
         <div className="aspect-video overflow-hidden">
           <img 
@@ -30,40 +30,29 @@ const BlogCard = ({ post }: BlogCardProps) => {
         </div>
       )}
       
-      <CardHeader className="pb-2">
-        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">
-          <div className="flex items-center gap-1">
-            <Calendar className="h-4 w-4" />
-            <span>{new Date(post.date).toLocaleDateString()}</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Clock className="h-4 w-4" />
-            <span>{post.readTime}</span>
-          </div>
+      <CardContent className="p-4">
+        <div className="flex flex-wrap gap-1 mb-2">
+          {post.tags.slice(0, 2).map(tag => (
+            <Badge key={tag} variant="secondary" className="text-xs">
+              {tag}
+            </Badge>
+          ))}
         </div>
         
         <Link to={`/blog/${post.slug}`}>
-          <h3 className="font-heading font-bold text-xl text-foreground group-hover:text-primary transition-colors line-clamp-2">
+          <h3 className="font-semibold text-base mb-2 line-clamp-2 group-hover:text-primary transition-colors">
             {post.title}
           </h3>
         </Link>
-      </CardHeader>
-
-      <CardContent className="pt-0">
-        <p className="text-muted-foreground mb-4 line-clamp-3">
+        
+        <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
           {post.excerpt}
         </p>
         
-        {post.tags.length > 0 && (
-          <div className="flex items-center gap-2 flex-wrap">
-            <Tag className="h-4 w-4 text-muted-foreground" />
-            {post.tags.slice(0, 3).map((tag) => (
-              <Badge key={tag} variant="secondary" className="text-xs">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        )}
+        <div className="flex items-center justify-between text-xs text-muted-foreground">
+          <span>By Elirome • {post.date}</span>
+          <span>{post.readTime}</span>
+        </div>
       </CardContent>
     </Card>
   );

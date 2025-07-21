@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 font-heading font-bold text-xl">
             <Film className="h-8 w-8 text-primary" />
-            <span className="text-foreground">AI Movie Scribe</span>
+            <span className="text-foreground">Elirome</span>
           </Link>
 
           {/* Desktop Navigation */}

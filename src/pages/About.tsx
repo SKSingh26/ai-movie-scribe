@@ -31,9 +31,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title="About - AI Movie Scribe"
-        description="Learn about AI Movie Scribe, your source for intelligent film analysis, AI-powered movie insights, and data-driven cinema predictions."
-        keywords="about AI Movie Scribe, film analysis, movie insights, cinema AI"
+        title="About - Elirome"
+        description="Learn about Elirome's mission to help people find the perfect movie for their mood through AI-powered insights and social media analysis."
+        keywords="about Elirome, movie recommendations, mood-based movies, AI movie discovery"
       />
       
       <Navbar />
@@ -43,27 +43,27 @@ const About = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="font-heading font-bold text-4xl sm:text-5xl text-foreground mb-6">
-              About AI Movie Scribe
+              About Elirome
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We're pioneering the intersection of artificial intelligence and cinema, bringing you 
-              data-driven insights, predictions, and analysis that go beyond traditional movie criticism.
+              Helping people find the perfect movie for their mood through AI-powered insights 
+              and data from Reddit, Instagram, and other social platforms.
             </p>
           </div>
 
           {/* Mission Statement */}
           <section className="mb-16">
-            <Card className="bg-gradient-card border-border p-8">
+            <Card className="bg-card border-border p-8">
               <CardContent className="p-0">
                 <h2 className="font-heading font-bold text-2xl text-foreground mb-4">
                   Our Mission
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  At AI Movie Scribe, we believe that the future of film criticism and analysis lies in 
-                  the intelligent application of data science and machine learning. Our mission is to 
-                  democratize access to sophisticated film analysis, helping movie enthusiasts, industry 
-                  professionals, and casual viewers alike understand the deeper patterns and trends that 
-                  shape the world of cinema.
+                  At Elirome, we understand that choosing the right movie can make or break your evening. 
+                  Our mission is simple: help people discover films that perfectly match their current mood 
+                  and preferences. Using artificial intelligence and data gathered from Reddit, Instagram, 
+                  and other social platforms, we analyze movie discussions, reviews, and sentiment to provide 
+                  personalized recommendations that truly resonate.
                 </p>
               </CardContent>
             </Card>

@@ -12,11 +12,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 font-heading font-bold text-xl mb-4">
               <Film className="h-8 w-8 text-primary" />
-              <span className="text-foreground">AI Movie Scribe</span>
+              <span className="text-foreground">Elirome</span>
             </Link>
             <p className="text-muted-foreground max-w-md">
-              Exploring the world of cinema through AI-powered insights, reviews, and analysis. 
-              Discover the stories behind your favorite films.
+              Helping people find the perfect movie for their mood through AI-powered insights and social media analysis.
             </p>
           </div>
 
@@ -56,7 +55,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} AI Movie Scribe. All rights reserved.
+            © {currentYear} Elirome. All rights reserved.
           </p>
           
           {/* Social Links */}
